@@ -2,6 +2,7 @@
     font-family: Norse-bold;
     src: url(fonts/Norse-Bold.otf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,700&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -35,66 +36,45 @@ html{
 body {
     display:flex;
 	line-height: 1;
-    align-items: stretch;
-    height:100%;
     width:100%;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    height: 100%;
 }
 
 .leftbg{
     display:flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(image/pear.jpg);
-    background-color: #e4bf6fcc;
+    background-image: url(image/grey.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-width:30%;
-    height:100%;
-    width:80%;
+    width: 40vw;
 }
 
 .logodiv{
     display:flex;
-    background-color: rgba(0, 0, 0, 0.26);
-    margin-bottom: 50vh;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.267);
     width:100%;
-    height:13%;
-    padding: 2% 0;
+    height:10vh;
+    padding: 1% 0px;
+    margin-top: 25vh;
+    gap:3px;
 }
 
 .imgcontain{
-    width: auto;
+    display:flex;
+    align-items: center;
+    width:auto;
     height:100%;
-    vertical-align:middle;
 }
 
 .logo{
-    max-width: 100%;
-    max-height: 100%;
+    width:5vw;
+    height:auto;
 }
 
 .odin{
-    font-family:Norse-bold;
     color:white;
-    font-size:10vw;
+    font-family: Norse-bold;
+    font-size: 6vw;
 }
 
 .rightbg{
@@ -103,7 +83,33 @@ table {
 }
 
 .title{
-    display:flex;
-    background-color: rgb(218, 218, 218);
-    font-size: 2.5vh;
+    background-color: rgb(238, 238, 238);
+    padding-top: 15vh;
+    padding-bottom: 8vh;
+    padding-right:12vw;
+    padding-left:6vw;
+    font-size: 3vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+
+.itali{
+    font-style:italic;
+}
+
+.form{
+    padding-left: 6vw;
+}
+
+.formti{
+    padding-left: 6vw;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:600;
+    font-size: 3vh;
+    padding-top:2vh;
+    padding-bottom: 2vh;
+}
+
+.already{
+    padding-left:6vw;
 }
