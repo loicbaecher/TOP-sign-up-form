@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signupform</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="form.js" defer></script>
 </head>
 <body>
     <div class="leftbg">
@@ -29,26 +30,58 @@
                 You <em class="itali">know</em> you want to.
             </p>
         </div>
-        <div class="formti">Let's do this!</div>
-        <form class="form">
-            <fieldset>
-                <label for="firstname">First name</label>
-                <input type="text" id="firstname" name="firstname" required>
-                <label for="lastname">Last name</label>
-                <input type="text" id="lastname" name="lastname" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone">
-                <label for="pass">Password</label>
-                <input type="password" id="pass" name="password" required>
-                <label for="confpass">Confirm password</label>
-                <input type="password" id="confpass" required>
-                <button type="submit">Create Account</button>
-            </fieldset>
-        </form>
-        <div class="already">Already have an account?</div>
-        <lik class="already">Log in</div>
+        <div class="megaform">
+            <div class="megaformtop">
+                <div class="formti">Let's do this!</div>
+                <form class="form">
+                    <fieldset>
+                        <div class="formrow" id="rowone">
+                            <div class="formcol" id="col1row1">
+                                <label for="firstname">FIRST NAME</label>
+                                <input pattern="^[A-Z][a-z]{3,15}+$" type="text" id="firstname" name="firstnam" required>
+                            </div>
+                            <div class="formcol" id="col2row1">
+                                <label for="lastname">LAST NAME</label>
+                                <input pattern="^[A-Z][a-z]{3,15}+$" type="text" id="lastname" name="lastnam" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="formrow" id="rowtwo">
+                            <div class="formcol" id="col1row2">
+                                <label for="email" >EMAIL</label>
+                                <input type="email" pattern='[^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}'
+                                id="email" name="email" required>
+                            </div>
+                            <div class="formcol" id="col2row2">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input pattern='^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$' 
+                                type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="formrow" id="rowthree">
+                            <div class="formcol" id="col1row3">
+                                <label for="pass">PASSWORD</label>
+                                <input pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                type="password" id="pass" name="password" required>
+                            </div>
+                            <div class="formcol" id="col1row3">
+                                <label for="confpass">CONFIRM PASSWORD</label>
+                                <input pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                type="password" id="confpass" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            <div class="samemess"></div>
+        </div>
+        <button type="submit" class="send" >Create account</button>
+    </form>
+        <div class="already">Already have an account?
+            <a href="log.in.url" class="already">Log in</a>
+        </div>
     </div>
 </body>
 </html>
